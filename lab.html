@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт з фото</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        @media (max-width: 768px) {
+            .info-block {
+    min-width: 100%; 
+  }
+}
+        .photo-container {
+            position: relative;
+            min-height: 50vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAX23TLmLUDFMRc-yPictpjVntgpNb0cI2A&s');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .menu-left, .menu-right {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .menu-left a, .menu-right a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        
+        .center-title {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin: auto;
+            padding: 20px 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .bottom-blocks {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            flex-wrap: wrap;
+            margin-top: auto;
+        }
+        
+        .info-block {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            min-width: 250px;
+            max-width: 300px;
+            flex: 1 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            align-self: flex-start;
+        }
+        
+        .content-section {
+            padding: 40px;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: rgb(139, 69, 19);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="photo-container">
+        <div class="top-menu">
+            <div class="menu-left">
+                <a href="#">Головна</a>
+                <a href="#">Про нас</a>
+            </div>
+            <div class="menu-right">
+                <a href="#">Послуги</a>
+                <a href="#">Контакти</a>
+            </div>
+        </div>
+        
+        <h1 class="center-title">Красивий текст</h1>
+        
+        <div class="bottom-blocks">
+            <div class="info-block">
+                <h3>Блок 1</h3>
+                <p>Інформація 1</p>
+            </div>
+            <div class="info-block">
+                <h3>Блок 2</h3>
+                <p>Інформавір раів рівар івар авр рав рав ірав ірав ра ріав рав рпва  рав рав орі оа оповао а ація 2</p>
+            </div>
+            <div class="info-block">
+                <h3>Блок 3</h3>
+                <p>Інформагопшзфопх п фіпзщрвішщарп р
+                    пргшщфір пщшгр шзщпіфвр шпщірв шщпршз іфвфрщзхШЗВРпшго пшо півщг пфахщ ршзавЗція 3</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-section">
+        <h2>Додаткова інформація</h2>
+        <p>Тут може бути ваш основний текст</p>
+    </div>
+    
+    <footer>
+        <p>Підвал сайту © 2023</p>
+    </footer>
+</body>
+</html>
